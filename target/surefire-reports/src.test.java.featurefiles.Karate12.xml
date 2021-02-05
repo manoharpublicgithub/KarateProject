@@ -1,0 +1,54 @@
+<testsuite failures="2" name="src/test/java/featurefiles/Karate12.feature" skipped="0" tests="2" time="1.207973">
+  <testcase classname="src.test.java.featurefiles.Karate12" name="DDT Test case2" time="0.907688">
+    <failure message="Karate12.feature:26 - status code was: 500, expected: 200, response time: 497, url: https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit, response: A potentially dangerous Request.Form value was detected from the client (Celsius=&amp;quot;&amp;lt;Temp&amp;gt;&amp;quot;).&#13;&#10;">Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-www-form-urlencoded" ............. passed
+And request "Celsius=&lt;Temp&gt;" .............................................. passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Karate12.feature:26 - status code was: 500, expected: 200, response time: 497, url: https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit, response: A potentially dangerous Request.Form value was detected from the client (Celsius=&amp;quot;&amp;lt;Temp&amp;gt;&amp;quot;).&#13;
+&#13;
+	at ✽.Then status 200 (Karate12.feature:26)&#13;
+
+Then print response ....................................................... skipped
+* print responseHeaders ................................................... skipped
+* print responseTime ...................................................... skipped
+* print responseType ...................................................... skipped
+* match response //string == &lt;Result&gt; ..................................... skipped</failure>
+  </testcase>
+  <testcase classname="src.test.java.featurefiles.Karate12" name="DDT Test case2" time="0.300285">
+    <failure message="Karate12.feature:26 - status code was: 500, expected: 200, response time: 295, url: https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit, response: A potentially dangerous Request.Form value was detected from the client (Celsius=&amp;quot;&amp;lt;Temp&amp;gt;&amp;quot;).&#13;&#10;">Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-www-form-urlencoded" ............. passed
+And request "Celsius=&lt;Temp&gt;" .............................................. passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Karate12.feature:26 - status code was: 500, expected: 200, response time: 497, url: https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit, response: A potentially dangerous Request.Form value was detected from the client (Celsius=&amp;quot;&amp;lt;Temp&amp;gt;&amp;quot;).&#13;
+&#13;
+	at ✽.Then status 200 (Karate12.feature:26)&#13;
+
+Then print response ....................................................... skipped
+* print responseHeaders ................................................... skipped
+* print responseTime ...................................................... skipped
+* print responseType ...................................................... skipped
+* match response //string == &lt;Result&gt; ..................................... skipped
+Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-www-form-urlencoded" ............. passed
+And request "Celsius=&lt;Temp&gt;" .............................................. passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Karate12.feature:26 - status code was: 500, expected: 200, response time: 295, url: https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit, response: A potentially dangerous Request.Form value was detected from the client (Celsius=&amp;quot;&amp;lt;Temp&amp;gt;&amp;quot;).&#13;
+&#13;
+	at ✽.Then status 200 (Karate12.feature:26)&#13;
+
+Then print response ....................................................... skipped
+* print responseHeaders ................................................... skipped
+* print responseTime ...................................................... skipped
+* print responseType ...................................................... skipped
+* match response //string == &lt;Result&gt; ..................................... skipped</failure>
+  </testcase>
+</testsuite>

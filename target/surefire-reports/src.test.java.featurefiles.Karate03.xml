@@ -1,0 +1,11 @@
+<testsuite failures="1" name="src/test/java/featurefiles/Karate03.feature" skipped="0" tests="1" time="0.009479">
+  <testcase classname="src.test.java.featurefiles.Karate03" name="Json testcase6" time="0.009479">
+    <failure message="Karate03.feature:53 - path: /info/tool[2]/name, actual: 'IntelliJ', expected: 'IntelliJ1', reason: not a sub-string">Given def xml = ........................................................... passed
+* match xml/info/tool[1]/name contains "Karate" ........................... passed
+* match xml/info/tool[2]/name contains "IntelliJ1" ........................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Karate03.feature:53 - path: /info/tool[2]/name, actual: 'IntelliJ', expected: 'IntelliJ1', reason: not a sub-string&#13;
+	at ✽.* match xml/info/tool[2]/name contains "IntelliJ1" (Karate03.feature:53)</failure>
+  </testcase>
+</testsuite>

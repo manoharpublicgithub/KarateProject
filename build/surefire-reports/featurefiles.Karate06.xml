@@ -1,0 +1,15 @@
+<testsuite failures="0" name="featurefiles/Karate06.feature" skipped="0" tests="2" time="0.005661">
+  <testcase classname="featurefiles.Karate06" name="Karate testcase1" time="0.003615">
+    <system-out>Given def a = 10 .......................................................... passed
+And def b = 20 ............................................................ passed
+* assert a == 10 &amp;&amp; b == 20 ............................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.Karate06" name="Karate testcase2" time="0.002046">
+    <system-out>Given def a = 10 .......................................................... passed
+And def b = 20 ............................................................ passed
+* assert a == 10 &amp;&amp; b == 20 ............................................... passed
+Given def a = 10 .......................................................... passed
+And def b = 20 ............................................................ passed
+* assert a == 10 || b == 21 ............................................... passed</system-out>
+  </testcase>
+</testsuite>

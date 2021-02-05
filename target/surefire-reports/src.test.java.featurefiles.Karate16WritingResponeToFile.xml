@@ -1,0 +1,9 @@
+<testsuite failures="0" name="src/test/java/featurefiles/Karate16WritingResponeToFile.feature" skipped="0" tests="1" time="0.850021">
+  <testcase classname="src.test.java.featurefiles.Karate16WritingResponeToFile" name="select stmt test case3" time="0.850021">
+    <system-out>* def util = Java.type("misc.Utils") ...................................... passed
+Given url "https://reqres.in/api/users?page=2" ............................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* util.writeToFile("result.json",response) ................................ passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,50 @@
+<testsuite failures="0" name="featurefiles/DBTesting.feature" skipped="0" tests="4" time="0.26392">
+  <testcase classname="featurefiles.DBTesting" name="select stmt test case" time="0.182983">
+    <system-out>* def db = Java.type('misc.MyDBUtil') ..................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Selenium" .......................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.DBTesting" name="insert stmt test case" time="0.025942">
+    <system-out>* def db = Java.type('misc.MyDBUtil') ..................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Selenium" .......................................... passed
+* def db = Java.type('misc.MyDBUtil') ..................................... passed
+* def res = db.insertStatement("Insert into tools values(5230,'ssdfdample2','xyzs')") . passed
+* print res ............................................................... passed
+* match res == 'Success' .................................................. passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.DBTesting" name="update stmt test case" time="0.029933">
+    <system-out>* def db = Java.type('misc.MyDBUtil') ..................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Selenium" .......................................... passed
+* def db = Java.type('misc.MyDBUtil') ..................................... passed
+* def res = db.insertStatement("Insert into tools values(5230,'ssdfdample2','xyzs')") . passed
+* print res ............................................................... passed
+* match res == 'Success' .................................................. passed
+* def db = Java.type('misc.MyDBUtil') ..................................... passed
+* def rowsAffected = db.updateStatement("update tools set name='sampleV3' where id=5230") . passed
+* print rowsAffected ...................................................... passed
+* assert rowsAffected &gt;= 1 ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.DBTesting" name="delete stmt test case" time="0.025061">
+    <system-out>* def db = Java.type('misc.MyDBUtil') ..................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Selenium" .......................................... passed
+* def db = Java.type('misc.MyDBUtil') ..................................... passed
+* def res = db.insertStatement("Insert into tools values(5230,'ssdfdample2','xyzs')") . passed
+* print res ............................................................... passed
+* match res == 'Success' .................................................. passed
+* def db = Java.type('misc.MyDBUtil') ..................................... passed
+* def rowsAffected = db.updateStatement("update tools set name='sampleV3' where id=5230") . passed
+* print rowsAffected ...................................................... passed
+* assert rowsAffected &gt;= 1 ................................................ passed
+* def db = Java.type('misc.MyDBUtil') ..................................... passed
+* def rowsAffected = db.deleteStatement("delete from tools where id=5230") . passed
+* print rowsAffected ...................................................... passed
+* assert rowsAffected &gt;= 1 ................................................ passed</system-out>
+  </testcase>
+</testsuite>

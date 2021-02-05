@@ -1,0 +1,21 @@
+<testsuite failures="1" name="featurefiles/Karate05.feature" skipped="0" tests="1" time="0.310791">
+  <testcase classname="featurefiles.Karate05" name="Rest Testcase1" time="0.310791">
+    <failure message="Karate05.feature:15 - evaluation (js) failed: 104l, javax.script.ScriptException: &lt;eval&gt;:1:3 Missing space after numeric literal&#13;&#10;104l&#13;&#10;   ^ in &lt;eval&gt; at line number 1 at column number 3&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-www-form-urlencoded" ............. passed
+And request "Celsius=40" .................................................. passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+* print responseHeaders ................................................... passed
+* print responseTime ...................................................... passed
+* print responseType ...................................................... passed
+* match response //string == 104l ......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Karate05.feature:15 - evaluation (js) failed: 104l, javax.script.ScriptException: &lt;eval&gt;:1:3 Missing space after numeric literal&#13;
+104l&#13;
+   ^ in &lt;eval&gt; at line number 1 at column number 3
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match response //string == 104l (Karate05.feature:15)</failure>
+  </testcase>
+</testsuite>

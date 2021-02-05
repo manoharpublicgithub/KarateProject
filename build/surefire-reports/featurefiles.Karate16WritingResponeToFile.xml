@@ -1,0 +1,38 @@
+<testsuite failures="0" name="featurefiles/Karate16WritingResponeToFile.feature" skipped="0" tests="3" time="0.384033">
+  <testcase classname="featurefiles.Karate16WritingResponeToFile" name="select stmt test case" time="0.196204">
+    <system-out>* def util = Java.type("misc.Utils") ...................................... passed
+Given url "https://reqres.in/api/users?page=2" ............................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def res = get response .................................................. passed
+* print res ............................................................... passed
+* util.writeToFile("result.json",res) ..................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.Karate16WritingResponeToFile" name="Reading result file" time="0.003385">
+    <system-out>* def util = Java.type("misc.Utils") ...................................... passed
+Given url "https://reqres.in/api/users?page=2" ............................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def res = get response .................................................. passed
+* print res ............................................................... passed
+* util.writeToFile("result.json",res) ..................................... passed
+* def data = read("classpath:result.json") ................................ passed
+* print data .............................................................. passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.Karate16WritingResponeToFile" name="select stmt test case3" time="0.184444">
+    <system-out>* def util = Java.type("misc.Utils") ...................................... passed
+Given url "https://reqres.in/api/users?page=2" ............................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def res = get response .................................................. passed
+* print res ............................................................... passed
+* util.writeToFile("result.json",res) ..................................... passed
+* def data = read("classpath:result.json") ................................ passed
+* print data .............................................................. passed
+* def util = Java.type("misc.Utils") ...................................... passed
+Given url "https://reqres.in/api/users?page=2" ............................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* util.writeToFile("result.json",response) ................................ passed</system-out>
+  </testcase>
+</testsuite>

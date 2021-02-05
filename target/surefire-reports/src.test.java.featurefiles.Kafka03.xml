@@ -1,0 +1,14 @@
+<testsuite failures="0" name="src/test/java/featurefiles/Kafka03.feature" skipped="0" tests="1" time="0.431512">
+  <testcase classname="src.test.java.featurefiles.Kafka03" name="Creating Consumer" time="0.431512">
+    <system-out>Given url "http://192.168.1.62:8082" ...................................... passed
+Given path "/consumers/my-consumer-group" ................................. passed
+And request ............................................................... passed
+And header Content-Type = "application/vnd.kafka.json.v2+json" ............ passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* match response.instance_id == "Manohar_consumer" ........................ passed
+* def consumer_url = response.base_uri .................................... passed
+* print consumer_url ...................................................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,223 @@
+16:02:48.396 From karate-config file 
+16:02:48.896 request:
+1 > POST http://192.168.1.62:8082/topics/manohar
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 100
+1 > Content-Type: application/vnd.kafka.json.v2+json; charset=UTF-8
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"records":[{"key":"key529","value":"key-value3"},{"value":"val529","partition":0},{"value":123.3}]}
+
+16:02:48.959 response time in milliseconds: 69.26
+1 < 200
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 05 Feb 2021 10:32:48 GMT
+1 < Vary: Accept-Encoding, User-Agent
+{"offsets":[{"partition":0,"offset":9,"error_code":null,"error":null},{"partition":0,"offset":10,"error_code":null,"error":null},{"partition":0,"offset":11,"error_code":null,"error":null}],"key_schema_id":null,"value_schema_id":null}
+
+16:02:48.959 [print] {
+  "offsets": [
+    {
+      "partition": 0,
+      "offset": 9,
+      "error_code": null,
+      "error": null
+    },
+    {
+      "partition": 0,
+      "offset": 10,
+      "error_code": null,
+      "error": null
+    },
+    {
+      "partition": 0,
+      "offset": 11,
+      "error_code": null,
+      "error": null
+    }
+  ],
+  "value_schema_id": null,
+  "key_schema_id": null
+}
+
+16:02:48.974 after scenario inside config 
+16:02:48.974 From karate-config file 
+16:02:48.990 [print] <info>
+  <id>101</id>
+  <tool>
+    <name>Karate</name>
+    <version>0.9.6</version>
+  </tool>
+</info>
+
+16:02:49.022 [print]
+16:02:49.037 [print] Karate
+16:02:49.037 after scenario inside config 
+16:02:49.099 From karate-config file 
+16:02:49.099 after scenario inside config 
+16:02:49.115 From karate-config file 
+16:02:49.193 after scenario inside config 
+16:02:49.302 From karate-config file 
+16:02:49.397 request:
+1 > POST http://www.dneonline.com/calculator.asmx
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 313
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: www.dneonline.com
+1 > SOAPAction: http://tempuri.org/Add
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap:Body>
+    <Add xmlns="http://tempuri.org/">
+      <intA>3</intA>
+      <intB>4</intB>
+    </Add>
+  </soap:Body>
+</soap:Envelope>
+
+16:02:49.974 response time in milliseconds: 572.42
+1 < 200
+1 < Cache-Control: private, max-age=0
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:32:49 GMT
+1 < Server: Microsoft-IIS/8.0
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 2.0.50727
+1 < X-Powered-By: ASP.NET
+1 < X-Powered-By-Plesk: PleskWin
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AddResponse xmlns="http://tempuri.org/"><AddResult>7</AddResult></AddResponse></soap:Body></soap:Envelope>
+
+16:02:49.974 [print] {
+  "Cache-Control": [
+    "private, max-age=0"
+  ],
+  "Content-Type": [
+    "text/xml; charset=utf-8"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "Server": [
+    "Microsoft-IIS/8.0"
+  ],
+  "X-AspNet-Version": [
+    "2.0.50727"
+  ],
+  "X-Powered-By": [
+    "ASP.NET"
+  ],
+  "X-Powered-By-Plesk": [
+    "PleskWin"
+  ],
+  "Date": [
+    "Fri, 05 Feb 2021 10:32:49 GMT"
+  ]
+}
+
+16:02:49.974 [print] xml
+16:02:49.974 [print] <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap:Body>
+    <AddResponse xmlns="http://tempuri.org/">
+      <AddResult>7</AddResult>
+    </AddResponse>
+  </soap:Body>
+</soap:Envelope>
+
+16:02:49.974 [print] 572
+16:02:49.974 [print] 200
+16:02:49.974 [print] [
+  "Microsoft-IIS/8.0"
+]
+
+16:02:49.974 [print] Microsoft-IIS/8.0
+16:02:49.974 after scenario inside config 
+16:02:49.990 From karate-config file 
+16:02:49.990 request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:02:50.178 response time in milliseconds: 180.88
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 3465
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 61cbf8415c5b1936-SIN
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:32:50 GMT
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=GLnCG3QU%2B9AXKwjvEomCBOrCmC%2F7c9%2Fmd6MqsGAX8X3wRi7H0Ox237Imm%2Fd2s3FOLYXqv8ilE0eOWZSWZPKQfC9afA4jZ%2Fhplqw%3D"}],"max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=df727c8259065d345c59bb49a37052d501612521170; expires=Sun, 07-Mar-21 10:32:50 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0813597ce1000019368f324000000001
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+16:02:50.178 [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "last_name": "Lawson",
+      "id": 7,
+      "avatar": "https://reqres.in/img/faces/7-image.jpg",
+      "first_name": "Michael",
+      "email": "michael.lawson@reqres.in"
+    },
+    {
+      "last_name": "Ferguson",
+      "id": 8,
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "first_name": "Lindsay",
+      "email": "lindsay.ferguson@reqres.in"
+    },
+    {
+      "last_name": "Funke",
+      "id": 9,
+      "avatar": "https://reqres.in/img/faces/9-image.jpg",
+      "first_name": "Tobias",
+      "email": "tobias.funke@reqres.in"
+    },
+    {
+      "last_name": "Fields",
+      "id": 10,
+      "avatar": "https://reqres.in/img/faces/10-image.jpg",
+      "first_name": "Byron",
+      "email": "byron.fields@reqres.in"
+    },
+    {
+      "last_name": "Edwards",
+      "id": 11,
+      "avatar": "https://reqres.in/img/faces/11-image.jpg",
+      "first_name": "George",
+      "email": "george.edwards@reqres.in"
+    },
+    {
+      "last_name": "Howell",
+      "id": 12,
+      "avatar": "https://reqres.in/img/faces/12-image.jpg",
+      "first_name": "Rachel",
+      "email": "rachel.howell@reqres.in"
+    }
+  ],
+  "page": 2,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}
+
+16:02:50.178 after scenario inside config 

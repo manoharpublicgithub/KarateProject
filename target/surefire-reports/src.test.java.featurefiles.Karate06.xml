@@ -1,0 +1,11 @@
+<testsuite failures="1" name="src/test/java/featurefiles/Karate06.feature" skipped="0" tests="1" time="0.013778">
+  <testcase classname="src.test.java.featurefiles.Karate06" name="Karate testcase2" time="0.013778">
+    <failure message="Karate06.feature:16 - assert evaluated to false: a == 1 || b == 21">Given def a = 10 .......................................................... passed
+And def b = 20 ............................................................ passed
+* assert a == 1 || b == 21 ................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Karate06.feature:16 - assert evaluated to false: a == 1 || b == 21&#13;
+	at ✽.* assert a == 1 || b == 21 (Karate06.feature:16)</failure>
+  </testcase>
+</testsuite>

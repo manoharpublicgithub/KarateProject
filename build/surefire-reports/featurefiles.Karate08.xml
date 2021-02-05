@@ -1,0 +1,12 @@
+<testsuite failures="0" name="featurefiles/Karate08.feature" skipped="0" tests="1" time="0.009081">
+  <testcase classname="featurefiles.Karate08" name="Regular expression validation testcase1" time="0.009081">
+    <system-out>Given def a = "10" ........................................................ passed
+And def b = "Karate" ...................................................... passed
+And def c = "Karate Framework abc" ........................................ passed
+* match a == "#regex [0-9]+" .............................................. passed
+* match a == "#regex \\d+" ................................................ passed
+* match b == "#regex \\w+" ................................................ passed
+* match b == "#regex [A-Z][a-z]+" ......................................... passed
+* match c == "#regex [A-Za-z\\s]+" ........................................ passed</system-out>
+  </testcase>
+</testsuite>

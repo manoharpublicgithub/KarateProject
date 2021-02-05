@@ -1,0 +1,15 @@
+<testsuite failures="1" name="src/test/java/featurefiles/CallingFeature.feature" skipped="0" tests="1" time="1.221543">
+  <testcase classname="src.test.java.featurefiles.CallingFeature" name="Calling Feature Testcase1" time="1.221543">
+    <failure message="CallingFeature.feature:6 - &#10;CalledFeature.feature:15 - evaluation (js) failed: 104l, javax.script.ScriptException: &lt;eval&gt;:1:3 Missing space after numeric literal&#13;&#10;104l&#13;&#10;   ^ in &lt;eval&gt; at line number 1 at column number 3&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def result = call read("CalledFeature.feature") ......................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: CallingFeature.feature:6 - 
+CalledFeature.feature:15 - evaluation (js) failed: 104l, javax.script.ScriptException: &lt;eval&gt;:1:3 Missing space after numeric literal&#13;
+104l&#13;
+   ^ in &lt;eval&gt; at line number 1 at column number 3
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* def result = call read("CalledFeature.feature") (CallingFeature.feature:6)&#13;
+
+* print result ............................................................ skipped</failure>
+  </testcase>
+</testsuite>

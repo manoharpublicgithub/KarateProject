@@ -1,0 +1,82 @@
+16:02:48.396 From karate-config file 
+16:02:48.896 request:
+1 > POST http://192.168.1.62:8082/consumers/my-consumer-group
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 103
+1 > Content-Type: application/vnd.kafka.json.v2+json; charset=UTF-8
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"name":"Manohar_consumer","format":"json","auto.offset.reset":"earliest","auto.commit.enable":"false"}
+
+16:02:49.068 response time in milliseconds: 168.45
+1 < 200
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 05 Feb 2021 10:32:49 GMT
+1 < Vary: Accept-Encoding, User-Agent
+{"instance_id":"Manohar_consumer","base_uri":"http://192.168.1.62:8082/consumers/my-consumer-group/instances/Manohar_consumer"}
+
+16:02:49.068 [print] {
+  "instance_id": "Manohar_consumer",
+  "base_uri": "http://192.168.1.62:8082/consumers/my-consumer-group/instances/Manohar_consumer"
+}
+
+16:02:49.068 [print] http://192.168.1.62:8082/consumers/my-consumer-group/instances/Manohar_consumer
+16:02:49.068 after scenario inside config 
+16:02:49.068 From karate-config file 
+16:02:49.068 [print] C = 
+16:02:49.084 End of the Test 
+16:02:49.084 after scenario inside config 
+16:02:49.084 From karate-config file 
+16:02:49.084 [print] C = 
+16:02:49.084 End of the Test 
+16:02:49.084 after scenario inside config 
+16:02:49.084 From karate-config file 
+16:02:49.084 [print] C =  30.0
+16:02:49.084 End of the Test 
+16:02:49.084 after scenario inside config 
+16:02:49.084 From karate-config file 
+16:02:49.099 request:
+1 > GET http://192.168.1.62:8082/consumers/my-consumer-group/instances/Manohar_consumer/records?timeout=3000&max_bytes=300000
+1 > Accept: application/vnd.kafka.json.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:02:49.146 response time in milliseconds: 52.29
+1 < 500
+1 < Content-Length: 52
+1 < Content-Type: application/vnd.kafka.json.v2+json
+1 < Date: Fri, 05 Feb 2021 10:32:49 GMT
+{"error_code":500,"message":"Internal Server Error"}
+
+16:02:49.146 status code was: 500, expected: 200, response time: 52, url: http://192.168.1.62:8082/consumers/my-consumer-group/instances/Manohar_consumer/records?timeout=3000&max_bytes=300000, response: {"error_code":500,"message":"Internal Server Error"}
+16:02:49.146 after scenario inside config 
+16:02:49.146 From karate-config file 
+16:02:49.162 after scenario inside config 
+16:02:49.755 request:
+1 > POST https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 14
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: www.w3schools.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+Celsius=<Temp>
+
+16:02:50.052 response time in milliseconds: 298.92
+1 < 500
+1 < Cache-Control: private,public
+1 < Content-Length: 109
+1 < Content-Type: text/plain; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:24:39 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < X-AspNet-Version: 4.0.30319
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: ASP.NET
+A potentially dangerous Request.Form value was detected from the client (Celsius=&quot;&lt;Temp&gt;&quot;).
+
+
+16:02:50.052 status code was: 500, expected: 200, response time: 299, url: https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit, response: A potentially dangerous Request.Form value was detected from the client (Celsius=&quot;&lt;Temp&gt;&quot;).
+

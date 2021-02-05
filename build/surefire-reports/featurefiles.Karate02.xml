@@ -1,0 +1,46 @@
+<testsuite failures="0" name="featurefiles/Karate02.feature" skipped="0" tests="4" time="0.015893">
+  <testcase classname="featurefiles.Karate02" name="Json testcase1" time="0.009116">
+    <system-out>Given def json1 = { "id" : "101", "tool":{ "name":"Karate", "version":"0.9.6"} } . passed
+* print json1 ............................................................. passed
+* print json1.id .......................................................... passed
+* print json1.tool ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.Karate02" name="Json testcase2" time="0.000993">
+    <system-out>Given def json1 = { "id" : "101", "tool":{ "name":"Karate", "version":"0.9.6"} } . passed
+* print json1 ............................................................. passed
+* print json1.id .......................................................... passed
+* print json1.tool ........................................................ passed
+Given def json1 = ......................................................... passed
+* print json1 ............................................................. passed
+* print json1.id .......................................................... passed
+* print json1.tool ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.Karate02" name="Json testcase3" time="0.00531">
+    <system-out>Given def json1 = { "id" : "101", "tool":{ "name":"Karate", "version":"0.9.6"} } . passed
+* print json1 ............................................................. passed
+* print json1.id .......................................................... passed
+* print json1.tool ........................................................ passed
+Given def json1 = ......................................................... passed
+* print json1 ............................................................. passed
+* print json1.id .......................................................... passed
+* print json1.tool ........................................................ passed
+Given def json1 = { "id" : "101", "tool":{ "name":"Karate", "version":"0.9.6"}} . passed
+* assert json1.id == "101" ................................................ passed
+* assert json1.tool.name == "Karate" ...................................... passed</system-out>
+  </testcase>
+  <testcase classname="featurefiles.Karate02" name="Json testcase4" time="0.000474">
+    <system-out>Given def json1 = { "id" : "101", "tool":{ "name":"Karate", "version":"0.9.6"} } . passed
+* print json1 ............................................................. passed
+* print json1.id .......................................................... passed
+* print json1.tool ........................................................ passed
+Given def json1 = ......................................................... passed
+* print json1 ............................................................. passed
+* print json1.id .......................................................... passed
+* print json1.tool ........................................................ passed
+Given def json1 = { "id" : "101", "tool":{ "name":"Karate", "version":"0.9.6"}} . passed
+* assert json1.id == "101" ................................................ passed
+* assert json1.tool.name == "Karate" ...................................... passed
+Given def json1 = { "id" : "101", "tool":{ "name":"Karate", "version":"0.9.6"}} . passed
+* match json1.tool == {"name":"Karate", "version":"0.9.6"} ................ passed</system-out>
+  </testcase>
+</testsuite>
